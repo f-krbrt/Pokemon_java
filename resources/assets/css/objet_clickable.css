@@ -1,0 +1,19 @@
+.button {
+    -fx-background-color: linear-gradient(#66D1E8, #2A919A); /* Dégradé bleu clair à bleu foncé */
+    -fx-background-radius: 10; /* Coins arrondis */
+    -fx-border-color: #1E6F77; /* Bordure bleu foncé */
+    -fx-border-width: 3; /* Épaisseur de la bordure */
+    -fx-border-radius: 10; /* Coins arrondis pour la bordure */
+    -fx-font-family: "Arial", sans-serif; /* Police du texte */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-font-weight: bold; /* Texte en gras */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-padding: 10 20; /* Espacement intérieur */
+    -fx-effect: dropshadow(gaussian, #000000, 5, 0.5, 0, 2); /* Ombre pour effet de relief */
+    -fx-alignment: center; /* Centrer le texte */
+    -fx-cursor: hand; /* Curseur main au survol */
+}
+.button:pressed {
+    -fx-effect: dropshadow(gaussian, #000000, 5, 0.5, 0, 2); /* Réduction de l'ombre au clic */
+    -fx-translate-y: 2; /* Déplacement vers le bas pour effet de clic */
+}

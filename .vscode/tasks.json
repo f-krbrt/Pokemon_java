@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "copy-resources",
+      "type": "shell",
+      "command": "xcopy /E /I /Y resources\\assets bin\\assets",
+      "problemMatcher": []
+    },
+    {
+      "label": "build-java-with-resources",
+      "dependsOn": ["copy-resources"],
+      "dependsOrder": "sequence",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
